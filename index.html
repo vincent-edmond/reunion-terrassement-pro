@@ -3,6 +3,1030 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réunion Terrassement Pro — Terrassement & VRD à La Réunion (974)</title>
+    <meta name="description" content="Réunion Terrassement Pro — Expert en terrassement, VRD, enrochement et aménagement extérieur à La Réunion. Devis gratuit en 2h. Entreprise assurée et certifiée.">
+    <meta name="keywords" content="terrassement réunion, terrassement 974, VRD réunion, enrochement réunion, mini pelle réunion, terrassement particulier réunion, entreprise terrassement la réunion">
+    <meta property="og:title" content="Réunion Terrassement Pro — Terrassement & VRD 974">
+    <meta property="og:description" content="Expert terrassement à La Réunion. Devis gratuit en 2h. Particuliers & Professionnels.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --orange: #E8660A;
+            --orange-hover: #D05A08;
+            --orange-light: #FF8C33;
+            --orange-glow: rgba(232,102,10,0.15);
+            --black: #1A1A1A;
+            --dark: #2D2D2D;
+            --gray: #555;
+            --light-gray: #999;
+            --bg: #F5F2EF;
+            --white: #FFFFFF;
+            --success: #27ae60;
+            --radius: 12px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            color: var(--black);
+            line-height: 1.7;
+            background: var(--bg);
+        }
+
+        /* ========== NAV ========== */
+        .nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            background: rgba(26,26,26,0.97);
+            backdrop-filter: blur(14px);
+            padding: 0 24px;
+            display: flex; align-items: center; justify-content: space-between;
+            height: 64px;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        .nav-logo {
+            font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 1.15rem;
+            color: white; text-decoration: none; display: flex; align-items: center; gap: 8px;
+        }
+        .nav-logo span { color: var(--orange); }
+        .nav-links { display: flex; gap: 24px; align-items: center; }
+        .nav-links a {
+            color: rgba(255,255,255,0.7); text-decoration: none;
+            font-size: 0.85rem; font-weight: 500; transition: color 0.2s;
+        }
+        .nav-links a:hover { color: var(--orange); }
+        .nav-cta {
+            background: var(--orange) !important; color: white !important;
+            padding: 8px 18px !important; border-radius: 8px;
+            font-weight: 600 !important; transition: background 0.2s !important;
+        }
+        .nav-cta:hover { background: var(--orange-hover) !important; }
+        .nav-toggle {
+            display: none; background: none; border: none;
+            color: white; font-size: 1.5rem; cursor: pointer;
+        }
+
+        /* ========== HERO ========== */
+        .hero {
+            min-height: 100vh; display: flex; align-items: center;
+            position: relative; overflow: hidden;
+            background: var(--black);
+        }
+        .hero-bg {
+            position: absolute; inset: 0;
+            background: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1600&q=80') center/cover no-repeat;
+            opacity: 0.35;
+        }
+        .hero-overlay {
+            position: absolute; inset: 0;
+            background: linear-gradient(135deg, rgba(26,26,26,0.92) 0%, rgba(26,26,26,0.6) 50%, rgba(232,102,10,0.15) 100%);
+        }
+        .hero-content {
+            position: relative; z-index: 2; padding: 120px 24px 80px;
+            max-width: 1100px; margin: 0 auto; width: 100%;
+        }
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: rgba(232,102,10,0.2); color: var(--orange);
+            padding: 6px 16px; border-radius: 20px;
+            font-size: 0.8rem; font-weight: 600;
+            margin-bottom: 24px; border: 1px solid rgba(232,102,10,0.3);
+        }
+        .hero-badge .dot {
+            width: 8px; height: 8px; background: #27ae60; border-radius: 50%;
+            animation: blink 2s infinite;
+        }
+        @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+        .hero h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.4rem; font-weight: 900; color: white;
+            line-height: 1.08; margin-bottom: 20px; letter-spacing: -1.5px;
+            max-width: 700px;
+        }
+        .hero h1 .orange { color: var(--orange); }
+        .hero-sub {
+            font-size: 1.12rem; color: rgba(255,255,255,0.65);
+            margin-bottom: 36px; max-width: 520px; line-height: 1.7;
+        }
+        .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+        .btn {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 14px 28px; border-radius: 10px;
+            font-size: 0.95rem; font-weight: 600;
+            text-decoration: none; transition: all 0.25s; cursor: pointer; border: none;
+        }
+        .btn-primary {
+            background: var(--orange); color: white;
+            box-shadow: 0 4px 16px rgba(232,102,10,0.3);
+        }
+        .btn-primary:hover { background: var(--orange-hover); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(232,102,10,0.4); }
+        .btn-wa {
+            background: #25D366; color: white;
+            box-shadow: 0 4px 16px rgba(37,211,102,0.3);
+        }
+        .btn-wa:hover { background: #1fba59; transform: translateY(-2px); }
+        .btn-outline {
+            background: transparent; color: white;
+            border: 1.5px solid rgba(255,255,255,0.25);
+        }
+        .btn-outline:hover { border-color: var(--orange); color: var(--orange); }
+
+        .hero-stats {
+            margin-top: 56px; display: flex; gap: 48px; flex-wrap: wrap;
+        }
+        .hero-stat { text-align: left; }
+        .hero-stat .val {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem; font-weight: 900; color: var(--orange);
+        }
+        .hero-stat .lbl {
+            font-size: 0.82rem; color: rgba(255,255,255,0.45);
+            margin-top: 2px;
+        }
+
+        /* ========== SECTION COMMON ========== */
+        section { padding: 100px 24px; }
+        .container { max-width: 1100px; margin: 0 auto; }
+        .section-tag {
+            display: inline-block; background: var(--orange-glow); color: var(--orange);
+            padding: 4px 14px; border-radius: 20px;
+            font-size: 0.76rem; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 14px;
+        }
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.4rem; font-weight: 900; color: var(--black);
+            margin-bottom: 12px; letter-spacing: -0.5px; line-height: 1.15;
+        }
+        .section-sub {
+            color: var(--gray); font-size: 1.05rem; max-width: 560px; margin-bottom: 56px;
+        }
+
+        /* ========== BANDEAU CONFIANCE ========== */
+        .trust-bar {
+            background: var(--black); padding: 28px 24px;
+        }
+        .trust-inner {
+            max-width: 1100px; margin: 0 auto;
+            display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px;
+        }
+        .trust-item {
+            display: flex; align-items: center; gap: 12px; color: rgba(255,255,255,0.7);
+        }
+        .trust-icon {
+            width: 44px; height: 44px; border-radius: 10px;
+            background: rgba(232,102,10,0.15); display: flex;
+            align-items: center; justify-content: center; font-size: 1.2rem;
+        }
+        .trust-text .t1 { font-weight: 700; color: white; font-size: 0.9rem; }
+        .trust-text .t2 { font-size: 0.78rem; color: rgba(255,255,255,0.5); }
+
+        /* ========== SERVICES ========== */
+        #services { background: var(--white); }
+        .services-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+        }
+        .service-card {
+            border-radius: 16px; overflow: hidden;
+            border: 1px solid #eee; transition: all 0.3s;
+            background: white; cursor: default;
+        }
+        .service-card:hover {
+            border-color: var(--orange); transform: translateY(-6px);
+            box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+        }
+        .service-img {
+            height: 200px; background-size: cover; background-position: center;
+            position: relative;
+        }
+        .service-img::after {
+            content: ''; position: absolute; inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);
+        }
+        .service-img .service-price {
+            position: absolute; bottom: 12px; left: 12px; z-index: 2;
+            background: var(--orange); color: white;
+            padding: 4px 12px; border-radius: 6px;
+            font-size: 0.8rem; font-weight: 700;
+        }
+        .service-body { padding: 20px; }
+        .service-body h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.05rem; font-weight: 800; margin-bottom: 8px;
+        }
+        .service-body p { color: var(--gray); font-size: 0.88rem; line-height: 1.6; }
+
+        /* ========== SPLIT SECTION (image + texte) ========== */
+        .split {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
+            align-items: center;
+        }
+        .split-img {
+            border-radius: 16px; overflow: hidden; position: relative;
+            height: 460px;
+        }
+        .split-img img {
+            width: 100%; height: 100%; object-fit: cover;
+        }
+        .split-img .badge-overlay {
+            position: absolute; bottom: 20px; left: 20px;
+            background: var(--orange); color: white;
+            padding: 10px 20px; border-radius: 10px;
+            font-weight: 700; font-size: 0.9rem;
+        }
+        .split-content .section-title { font-size: 2rem; }
+        .split-content p { color: var(--gray); margin-bottom: 16px; font-size: 0.95rem; }
+        .check-list { list-style: none; margin: 20px 0; }
+        .check-list li {
+            padding: 8px 0; font-size: 0.92rem; font-weight: 500;
+            display: flex; align-items: flex-start; gap: 10px;
+        }
+        .check-list .ck {
+            color: var(--orange); font-weight: 700; font-size: 1.1rem; flex-shrink: 0;
+        }
+
+        /* ========== RÉALISATIONS ========== */
+        #realisations { background: var(--black); color: white; }
+        #realisations .section-tag { border-color: rgba(232,102,10,0.5); }
+        #realisations .section-title { color: white; }
+        #realisations .section-sub { color: rgba(255,255,255,0.5); }
+        .gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+        .gallery-item {
+            border-radius: 12px; overflow: hidden; position: relative;
+            height: 260px; cursor: pointer;
+        }
+        .gallery-item img {
+            width: 100%; height: 100%; object-fit: cover;
+            transition: transform 0.4s;
+        }
+        .gallery-item:hover img { transform: scale(1.08); }
+        .gallery-item .gallery-label {
+            position: absolute; bottom: 0; left: 0; right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            padding: 40px 16px 16px; color: white;
+        }
+        .gallery-label h4 { font-size: 0.9rem; font-weight: 700; }
+        .gallery-label p { font-size: 0.75rem; opacity: 0.7; }
+        .gallery-note {
+            text-align: center; margin-top: 32px; padding: 20px;
+            background: rgba(255,255,255,0.05); border-radius: 12px;
+            border: 1px dashed rgba(255,255,255,0.15);
+            color: rgba(255,255,255,0.5); font-size: 0.88rem;
+        }
+        .gallery-note strong { color: var(--orange); }
+
+        /* ========== DEVIS ========== */
+        #devis { background: var(--bg); position: relative; }
+        .devis-wrapper {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start;
+        }
+        .devis-left .section-title { font-size: 2rem; }
+        .devis-left p { color: var(--gray); margin-bottom: 16px; }
+        .devis-garantie {
+            margin-top: 24px; display: flex; flex-direction: column; gap: 12px;
+        }
+        .garantie-item {
+            display: flex; align-items: center; gap: 12px;
+            background: white; padding: 14px 18px; border-radius: 10px;
+            border: 1px solid #eee;
+        }
+        .garantie-item .gi { font-size: 1.3rem; }
+        .garantie-item .gt { font-size: 0.88rem; }
+        .garantie-item .gt strong { display: block; font-size: 0.92rem; color: var(--black); }
+
+        .devis-form {
+            background: white; border-radius: 16px; padding: 32px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.06); border: 1px solid #eee;
+        }
+        .devis-form h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800; font-size: 1.15rem; margin-bottom: 20px;
+            display: flex; align-items: center; gap: 8px;
+        }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px; }
+        .form-group { margin-bottom: 14px; }
+        .form-group label {
+            display: block; font-size: 0.82rem; font-weight: 600; margin-bottom: 5px; color: var(--dark);
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%; padding: 11px 14px; border-radius: 8px;
+            border: 1.5px solid #e0e0e0; background: #fafafa;
+            color: var(--black); font-size: 0.92rem; font-family: inherit;
+            transition: border-color 0.2s;
+        }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            outline: none; border-color: var(--orange); background: white;
+        }
+        .form-group textarea { resize: vertical; min-height: 90px; }
+        .form-submit {
+            background: var(--orange); color: white; border: none;
+            padding: 14px 28px; border-radius: 10px;
+            font-size: 0.95rem; font-weight: 700; cursor: pointer;
+            width: 100%; transition: background 0.2s; font-family: inherit;
+        }
+        .form-submit:hover { background: var(--orange-hover); }
+        .form-note { text-align: center; margin-top: 10px; font-size: 0.78rem; color: var(--light-gray); }
+
+        /* ========== AVIS ========== */
+        #avis { background: white; }
+        .avis-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .avis-card {
+            background: var(--bg); border-radius: 14px; padding: 28px;
+            border: 1px solid #eee; position: relative;
+        }
+        .avis-card::before {
+            content: '\201C'; font-size: 4rem; color: var(--orange);
+            opacity: 0.2; position: absolute; top: 8px; right: 20px;
+            font-family: serif; line-height: 1;
+        }
+        .avis-stars { color: var(--orange); font-size: 0.95rem; margin-bottom: 14px; letter-spacing: 2px; }
+        .avis-text { font-size: 0.92rem; color: var(--dark); margin-bottom: 16px; line-height: 1.7; }
+        .avis-author {
+            display: flex; align-items: center; gap: 12px;
+        }
+        .avis-avatar {
+            width: 40px; height: 40px; border-radius: 50%;
+            background: var(--orange); color: white;
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 700; font-size: 0.85rem;
+        }
+        .avis-name { font-weight: 700; font-size: 0.85rem; }
+        .avis-loc { font-size: 0.78rem; color: var(--light-gray); }
+
+        /* ========== FAQ ========== */
+        #faq { background: var(--bg); }
+        .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+        .faq-left { position: sticky; top: 100px; }
+        .faq-list {}
+        .faq-item {
+            background: white; border-radius: 12px; margin-bottom: 10px;
+            border: 1px solid #eee; overflow: hidden;
+        }
+        .faq-question {
+            padding: 18px 20px; font-weight: 600; font-size: 0.92rem;
+            cursor: pointer; display: flex; justify-content: space-between;
+            align-items: center; transition: color 0.2s;
+        }
+        .faq-question:hover { color: var(--orange); }
+        .faq-question .arrow { transition: transform 0.3s; font-size: 1.2rem; color: var(--orange); }
+        .faq-question.open .arrow { transform: rotate(45deg); }
+        .faq-answer {
+            padding: 0 20px; max-height: 0; overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            color: var(--gray); font-size: 0.88rem; line-height: 1.7;
+        }
+        .faq-answer.open { max-height: 400px; padding: 0 20px 20px; }
+
+        /* ========== CTA FINAL ========== */
+        .cta-final {
+            background: var(--orange); padding: 80px 24px; text-align: center;
+            position: relative; overflow: hidden;
+        }
+        .cta-final::before {
+            content: ''; position: absolute;
+            top: -100px; right: -100px;
+            width: 400px; height: 400px;
+            background: rgba(255,255,255,0.08); border-radius: 50%;
+        }
+        .cta-final h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem; font-weight: 900; color: white;
+            margin-bottom: 12px; position: relative;
+        }
+        .cta-final p {
+            color: rgba(255,255,255,0.8); font-size: 1.05rem;
+            margin-bottom: 32px; position: relative;
+        }
+        .cta-final .btn { position: relative; }
+        .btn-white {
+            background: white; color: var(--orange);
+        }
+        .btn-white:hover { background: #f5f5f5; transform: translateY(-2px); }
+
+        /* ========== FOOTER ========== */
+        .footer {
+            background: var(--black); color: rgba(255,255,255,0.6); padding: 56px 24px 24px;
+        }
+        .footer-grid {
+            max-width: 1100px; margin: 0 auto;
+            display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 32px; margin-bottom: 40px;
+        }
+        .footer h4 {
+            color: white; font-weight: 700; margin-bottom: 16px; font-size: 0.92rem;
+        }
+        .footer p, .footer a {
+            font-size: 0.85rem; color: rgba(255,255,255,0.45);
+            text-decoration: none; line-height: 2; display: block;
+        }
+        .footer a:hover { color: var(--orange); }
+        .footer-logo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900; font-size: 1.2rem; color: white; margin-bottom: 12px;
+        }
+        .footer-logo span { color: var(--orange); }
+        .footer-bottom {
+            max-width: 1100px; margin: 0 auto;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding-top: 20px; text-align: center; font-size: 0.75rem;
+        }
+
+        /* ========== WHATSAPP FLOAT ========== */
+        .whatsapp-float {
+            position: fixed; bottom: 24px; right: 24px; z-index: 999;
+            background: #25D366; color: white;
+            width: 60px; height: 60px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.7rem; text-decoration: none;
+            box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+            transition: transform 0.2s; animation: wapulse 2.5s infinite;
+        }
+        .whatsapp-float:hover { transform: scale(1.1); }
+        @keyframes wapulse {
+            0%,100% { box-shadow: 0 4px 16px rgba(37,211,102,0.4); }
+            50% { box-shadow: 0 4px 28px rgba(37,211,102,0.6); }
+        }
+        .wa-tooltip {
+            position: fixed; bottom: 92px; right: 24px; z-index: 998;
+            background: white; color: var(--black);
+            padding: 10px 16px; border-radius: 10px;
+            font-size: 0.82rem; font-weight: 600;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+            animation: fadeUp 0.5s ease 2s both;
+        }
+        .wa-tooltip::after {
+            content: ''; position: absolute; bottom: -6px; right: 24px;
+            width: 12px; height: 12px; background: white;
+            transform: rotate(45deg);
+        }
+        @keyframes fadeUp { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 900px) {
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .gallery { grid-template-columns: repeat(2, 1fr); }
+            .split { grid-template-columns: 1fr; gap: 32px; }
+            .split-img { height: 300px; }
+            .devis-wrapper { grid-template-columns: 1fr; }
+            .avis-grid { grid-template-columns: 1fr; }
+            .faq-grid { grid-template-columns: 1fr; }
+            .faq-left { position: static; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 640px) {
+            .nav-links { display: none; }
+            .nav-links.open {
+                display: flex; flex-direction: column;
+                position: absolute; top: 64px; left: 0; right: 0;
+                background: rgba(26,26,26,0.98); padding: 20px 24px; gap: 14px;
+            }
+            .nav-toggle { display: block; }
+            .hero h1 { font-size: 2.1rem; }
+            .hero-sub { font-size: 0.98rem; }
+            .hero-stats { gap: 24px; }
+            .hero-stat .val { font-size: 1.6rem; }
+            section { padding: 60px 16px; }
+            .section-title { font-size: 1.7rem; }
+            .services-grid { grid-template-columns: 1fr; }
+            .gallery { grid-template-columns: 1fr 1fr; }
+            .gallery-item { height: 180px; }
+            .form-row { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .trust-inner { flex-direction: column; align-items: flex-start; gap: 14px; padding: 0 8px; }
+            .cta-final h2 { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="nav">
+    <a href="#" class="nav-logo">RÉUNION <span>TP</span></a>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
+    <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#pourquoi">Pourquoi nous</a>
+        <a href="#realisations">Réalisations</a>
+        <a href="#avis">Avis</a>
+        <a href="#faq">FAQ</a>
+        <a href="#devis" class="nav-cta">Devis gratuit</a>
+    </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <div class="hero-badge"><span class="dot"></span> Disponible — Devis en 2h</div>
+        <h1>On prépare <span class="orange">votre terrain</span> pour bâtir vos projets</h1>
+        <p class="hero-sub">Terrassement, VRD, enrochement, piscine — pour les particuliers et les pros de La Réunion. Entreprise assurée, réponse rapide, travail soigné.</p>
+        <div class="hero-btns">
+            <a href="#devis" class="btn btn-primary">Demander un devis gratuit</a>
+            <a href="https://wa.me/262692XXXXXX?text=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20un%20terrassement%20%C3%A0%20La%20R%C3%A9union." class="btn btn-wa">WhatsApp &#10132;</a>
+            <a href="tel:+262692XXXXXX" class="btn btn-outline">0692 XX XX XX</a>
+        </div>
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <div class="val">2h</div>
+                <div class="lbl">Temps de réponse max</div>
+            </div>
+            <div class="hero-stat">
+                <div class="val">974</div>
+                <div class="lbl">Toute La Réunion</div>
+            </div>
+            <div class="hero-stat">
+                <div class="val">100%</div>
+                <div class="lbl">Assuré décennale</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== BANDEAU CONFIANCE ===== -->
+<div class="trust-bar">
+    <div class="trust-inner">
+        <div class="trust-item">
+            <div class="trust-icon">🛡️</div>
+            <div class="trust-text">
+                <div class="t1">Assurance décennale</div>
+                <div class="t2">Vos travaux sont garantis</div>
+            </div>
+        </div>
+        <div class="trust-item">
+            <div class="trust-icon">⚡</div>
+            <div class="trust-text">
+                <div class="t1">Devis en 2 heures</div>
+                <div class="t2">Réponse rapide, sans engagement</div>
+            </div>
+        </div>
+        <div class="trust-item">
+            <div class="trust-icon">📸</div>
+            <div class="trust-text">
+                <div class="t1">Suivi photo chantier</div>
+                <div class="t2">Avant, pendant et après</div>
+            </div>
+        </div>
+        <div class="trust-item">
+            <div class="trust-icon">💬</div>
+            <div class="trust-text">
+                <div class="t1">Joignable sur WhatsApp</div>
+                <div class="t2">Communication directe</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== SERVICES ===== -->
+<section id="services">
+    <div class="container">
+        <div class="section-tag">Nos services</div>
+        <h2 class="section-title">Tout le terrassement, un seul interlocuteur</h2>
+        <p class="section-sub">Du décaissement au VRD, de l'enrochement à la piscine — on gère votre projet de A à Z.</p>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=600&q=80');">
+                    <span class="service-price">Dès 35€/m³</span>
+                </div>
+                <div class="service-body">
+                    <h3>Terrassement général</h3>
+                    <p>Décaissement, nivellement, remblaiement, préparation de terrain. On attaque tout type de sol, même la roche basaltique réunionnaise.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80');">
+                    <span class="service-price">Sur devis</span>
+                </div>
+                <div class="service-body">
+                    <h3>VRD & Réseaux</h3>
+                    <p>Voirie, réseaux divers, tranchées, assainissement. Raccordements eau, électricité, évacuation eaux pluviales.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80');">
+                    <span class="service-price">Dès 80€/m³</span>
+                </div>
+                <div class="service-body">
+                    <h3>Enrochement</h3>
+                    <p>Murs de soutènement, enrochement paysager, stabilisation de talus. Protection contre l'érosion et les éboulements.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=600&q=80');">
+                    <span class="service-price">Dès 1 500€</span>
+                </div>
+                <div class="service-body">
+                    <h3>Terrassement piscine</h3>
+                    <p>Excavation pour piscine coque ou béton. Forme parfaite, évacuation des déblais incluse. On bosse avec les piscinistes de l'île.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1590496793929-36417d3117de?w=600&q=80');">
+                    <span class="service-price">Sur devis</span>
+                </div>
+                <div class="service-body">
+                    <h3>Aménagement extérieur</h3>
+                    <p>Création d'accès, plateformes, chemins carrossables, préparation pour dalle et clôture. Mise en forme de votre terrain.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-img" style="background-image:url('https://images.unsplash.com/photo-1580901368919-7738efb0f228?w=600&q=80');">
+                    <span class="service-price">Dès 350€/jour</span>
+                </div>
+                <div class="service-body">
+                    <h3>Location engins + chauffeur</h3>
+                    <p>Mini-pelle 1.8T à 8T, chargeur, camion benne — avec chauffeur expérimenté. À la journée ou demi-journée, partout sur l'île.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== POURQUOI NOUS (SPLIT) ===== -->
+<section id="pourquoi" style="background:var(--bg);">
+    <div class="container">
+        <div class="split">
+            <div class="split-img">
+                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80" alt="Chantier de terrassement à La Réunion">
+                <div class="badge-overlay">Entreprise locale 974</div>
+            </div>
+            <div class="split-content">
+                <div class="section-tag">Pourquoi nous</div>
+                <h2 class="section-title">On n'est pas un numéro de plus dans l'annuaire</h2>
+                <p>Trop d'entreprises de terrassement à La Réunion ne répondent pas au téléphone, mettent 2 semaines à envoyer un devis, ou disparaissent en plein chantier. Nous, on fait l'inverse.</p>
+                <ul class="check-list">
+                    <li><span class="ck">&#10003;</span> <span><strong>Devis en 2 heures</strong> — vous nous contactez, on vous rappelle dans la journée avec un chiffrage</span></li>
+                    <li><span class="ck">&#10003;</span> <span><strong>Suivi photo WhatsApp</strong> — on vous envoie l'avancée du chantier tous les jours</span></li>
+                    <li><span class="ck">&#10003;</span> <span><strong>Prix transparent</strong> — devis détaillé ligne par ligne, pas de surprise à la fin</span></li>
+                    <li><span class="ck">&#10003;</span> <span><strong>Chantier propre</strong> — on nettoie tout en partant, votre terrain est nickel</span></li>
+                    <li><span class="ck">&#10003;</span> <span><strong>Assuré décennale + RC Pro</strong> — attestation fournie avec chaque devis</span></li>
+                    <li><span class="ck">&#10003;</span> <span><strong>Toute La Réunion</strong> — Nord, Sud, Est, Ouest, les hauts aussi</span></li>
+                </ul>
+                <a href="#devis" class="btn btn-primary" style="margin-top:8px;">Demander un devis</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== RÉALISATIONS ===== -->
+<section id="realisations">
+    <div class="container">
+        <div class="section-tag">Nos réalisations</div>
+        <h2 class="section-title">Nos derniers chantiers en images</h2>
+        <p class="section-sub">Chaque chantier est documenté en photo. Voici quelques exemples de notre travail à La Réunion.</p>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=500&q=80" alt="Terrassement terrain">
+                <div class="gallery-label">
+                    <h4>Terrassement 400m²</h4>
+                    <p>Saint-Pierre — Terrain constructible</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=500&q=80" alt="Enrochement">
+                <div class="gallery-label">
+                    <h4>Enrochement paysager</h4>
+                    <p>Le Tampon — Mur de soutènement 30ml</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=500&q=80" alt="Terrassement piscine">
+                <div class="gallery-label">
+                    <h4>Excavation piscine</h4>
+                    <p>Saint-Gilles — Piscine 8x4</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1625722662233-297060231b85?w=500&q=80" alt="VRD réseaux">
+                <div class="gallery-label">
+                    <h4>VRD lotissement</h4>
+                    <p>Sainte-Marie — Réseaux + voirie</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-note">
+            <strong>Photos en cours de collecte.</strong> Les images ci-dessus sont des visuels d'illustration. Remplacez-les par les vraies photos de chantiers de votre client (avant/après) pour un impact maximum.
+        </div>
+    </div>
+</section>
+
+<!-- ===== DEVIS ===== -->
+<section id="devis">
+    <div class="container">
+        <div class="devis-wrapper">
+            <div class="devis-left">
+                <div class="section-tag">Devis gratuit</div>
+                <h2 class="section-title">Décrivez votre projet, on vous chiffre ça</h2>
+                <p>Remplissez le formulaire ou envoyez-nous un WhatsApp avec des photos de votre terrain. On revient vers vous en 2 heures max avec un devis détaillé.</p>
+                <p style="font-weight:600;color:var(--black);">Pas de mauvaise surprise : le prix annoncé est le prix final.</p>
+
+                <div class="devis-garantie">
+                    <div class="garantie-item">
+                        <span class="gi">⏱️</span>
+                        <div class="gt">
+                            <strong>Réponse en 2h max</strong>
+                            Du lundi au samedi, 7h-18h
+                        </div>
+                    </div>
+                    <div class="garantie-item">
+                        <span class="gi">💰</span>
+                        <div class="gt">
+                            <strong>100% gratuit, sans engagement</strong>
+                            On ne vous relancera pas 10 fois
+                        </div>
+                    </div>
+                    <div class="garantie-item">
+                        <span class="gi">📋</span>
+                        <div class="gt">
+                            <strong>Devis détaillé ligne par ligne</strong>
+                            Vous savez exactement ce que vous payez
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="devis-form">
+                <h3>📝 Votre demande de devis</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Votre nom *</label>
+                        <input type="text" placeholder="Jean Dupont" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Téléphone / WhatsApp *</label>
+                        <input type="tel" placeholder="0692 XX XX XX" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="jean@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Commune *</label>
+                        <select required>
+                            <option value="">Votre commune</option>
+                            <option>Saint-Denis</option><option>Saint-Paul</option>
+                            <option>Saint-Pierre</option><option>Le Tampon</option>
+                            <option>Saint-André</option><option>Saint-Louis</option>
+                            <option>Saint-Leu</option><option>Saint-Joseph</option>
+                            <option>Sainte-Marie</option><option>Sainte-Suzanne</option>
+                            <option>L'Étang-Salé</option><option>Les Avirons</option>
+                            <option>Petite-�Nle</option><option>La Possession</option>
+                            <option>Le Port</option><option>Saint-Benoît</option>
+                            <option>Bras-Panon</option><option>Cilaos</option>
+                            <option>Salazie</option><option>Sainte-Rose</option>
+                            <option>Trois-Bassins</option><option>Entre-Deux</option>
+                            <option>Plaine des Palmistes</option><option>Autre</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Type de travaux *</label>
+                    <select required>
+                        <option value="">Quel type de travaux ?</option>
+                        <option>Terrassement terrain</option>
+                        <option>Terrassement piscine</option>
+                        <option>VRD / Assainissement</option>
+                        <option>Enrochement / Soutènement</option>
+                        <option>Aménagement extérieur</option>
+                        <option>Location engin + chauffeur</option>
+                        <option>Démolition</option>
+                        <option>Autre</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Surface estimée</label>
+                        <input type="text" placeholder="Ex: 200 m²">
+                    </div>
+                    <div class="form-group">
+                        <label>Budget estimé</label>
+                        <select>
+                            <option value="">Fourchette</option>
+                            <option>Moins de 2 000€</option>
+                            <option>2 000€ - 5 000€</option>
+                            <option>5 000€ - 10 000€</option>
+                            <option>10 000€ - 20 000€</option>
+                            <option>Plus de 20 000€</option>
+                            <option>Aucune idée</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Détails du projet</label>
+                    <textarea placeholder="Décrivez votre projet : terrain en pente ? Accès difficile ? Roche ? Tout détail nous aide à chiffrer au plus juste."></textarea>
+                </div>
+                <button type="submit" class="form-submit" onclick="submitDevis(event)">Envoyer ma demande de devis</button>
+                <p class="form-note">Devis gratuit • Réponse en 2h • Sans engagement</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== AVIS ===== -->
+<section id="avis">
+    <div class="container">
+        <div class="section-tag">Ils nous font confiance</div>
+        <h2 class="section-title">Ce que disent nos clients</h2>
+        <p class="section-sub">La satisfaction de nos clients, c'est notre meilleure publicité.</p>
+
+        <div class="avis-grid">
+            <div class="avis-card">
+                <div class="avis-stars">★ ★ ★ ★ ★</div>
+                <div class="avis-text">Travail propre et rapide. Le terrassement de mon terrain de 300m² a été fait en 2 jours. Ils m'envoyaient des photos tous les soirs sur WhatsApp. Je recommande les yeux fermés.</div>
+                <div class="avis-author">
+                    <div class="avis-avatar">JM</div>
+                    <div>
+                        <div class="avis-name">Jean-Marc R.</div>
+                        <div class="avis-loc">Saint-Pierre — Terrassement terrain</div>
+                    </div>
+                </div>
+            </div>
+            <div class="avis-card">
+                <div class="avis-stars">★ ★ ★ ★ ★</div>
+                <div class="avis-text">Super réactif sur WhatsApp. J'ai envoyé des photos de mon terrain le matin, j'avais le devis à midi. L'enrochement est nickel, exactement comme je voulais. Et le chantier était propre en partant.</div>
+                <div class="avis-author">
+                    <div class="avis-avatar">SL</div>
+                    <div>
+                        <div class="avis-name">Sophie L.</div>
+                        <div class="avis-loc">Le Tampon — Enrochement</div>
+                    </div>
+                </div>
+            </div>
+            <div class="avis-card">
+                <div class="avis-stars">★ ★ ★ ★ ★</div>
+                <div class="avis-text">On a fait appel à eux pour le terrassement de notre piscine 8x4. L'équipe est sérieuse, le prix annoncé a été respecté, et ils ont même nettoyé les abords du chantier. Top.</div>
+                <div class="avis-author">
+                    <div class="avis-avatar">PD</div>
+                    <div>
+                        <div class="avis-name">Patrick & Marie D.</div>
+                        <div class="avis-loc">Saint-Gilles — Piscine</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p style="text-align:center;margin-top:28px;color:var(--light-gray);font-size:0.82rem;background:#fef9e7;padding:12px;border-radius:8px;display:inline-block;margin-left:auto;margin-right:auto;width:100%;">
+            <em>Ces témoignages sont des exemples. Remplacez-les par de vrais avis clients dès les premiers chantiers terminés.</em>
+        </p>
+    </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq">
+    <div class="container">
+        <div class="faq-grid">
+            <div class="faq-left">
+                <div class="section-tag">FAQ</div>
+                <h2 class="section-title">Vos questions, nos réponses</h2>
+                <p class="section-sub" style="margin-bottom:20px;">Tout ce que vous devez savoir avant de lancer votre projet de terrassement à La Réunion.</p>
+                <a href="#devis" class="btn btn-primary">Une autre question ? Contactez-nous</a>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Combien coûte un terrassement à La Réunion ?
+                        <span class="arrow">+</span>
+                    </div>
+                    <div class="faq-answer">Le prix dépend de la surface, du type de sol (terre meuble ou roche basaltique) et de l'accessibilité. En moyenne : 25€ à 55€/m³ pour un terrassement classique. Pour un terrain de 200m² avec 50cm de décaissement, comptez entre 3 000€ et 6 000€. On vous chiffre ça précisément en 2h.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Faut-il un permis pour terrasser son terrain ?
+                        <span class="arrow">+</span>
+                    </div>
+                    <div class="faq-answer">Si le terrassement est lié à un permis de construire, vous êtes couvert. Pour un terrassement seul (nivellement, création de plateforme), une déclaration préalable en mairie peut être nécessaire si la modification dépasse 2m de hauteur. On vous guide dans les démarches.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Combien de temps dure un chantier ?
+                        <span class="arrow">+</span>
+                    </div>
+                    <div class="faq-answer">Terrassement maison : 2 à 5 jours. Piscine : 1 à 2 jours. Enrochement : 3 à 7 jours selon la longueur. On vous donne un planning précis avant de démarrer.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Vous intervenez où à La Réunion ?
+                        <span class="arrow">+</span>
+                    </div>
+                    <div class="faq-answer">Partout sur l'île : Nord (Saint-Denis, Sainte-Marie), Est (Saint-André, Saint-Benoît), Sud (Saint-Pierre, Le Tampon, Saint-Louis) et Ouest (Saint-Paul, Saint-Leu, L'Étang-Salé). On monte aussi dans les hauts.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Êtes-vous assuré ?
+                        <span class="arrow">+</span>
+                    </div>
+                    <div class="faq-answer">Oui, RC Pro + garantie décennale. On fournit systématiquement nos attestations d'assurance avec chaque devis. C'est pas négociable pour nous — et ça devrait pas l'être pour vous non plus.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Que devient la terre excavée ?
+                        <span class="arrow">+</span>
+                    </div>
+                    <div class="faq-answer">Soit réutilisée sur place (remblai, nivellement), soit évacuée vers un centre agréé. Si c'est de la bonne terre végétale, on peut la valoriser. L'évacuation est toujours incluse dans nos devis quand elle est nécessaire.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CTA FINAL ===== -->
+<div class="cta-final">
+    <h2>Prêt à lancer votre projet ?</h2>
+    <p>Envoyez-nous les photos de votre terrain par WhatsApp,<br>on vous envoie un devis dans les 2 heures.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+        <a href="#devis" class="btn btn-white">Demander un devis gratuit</a>
+        <a href="https://wa.me/262692XXXXXX?text=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20des%20travaux%20de%20terrassement." class="btn btn-wa">Écrire sur WhatsApp</a>
+    </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="footer-grid">
+        <div>
+            <div class="footer-logo">RÉUNION <span>TP</span></div>
+            <p>Réunion Terrassement Pro — votre expert terrassement, VRD et enrochement à La Réunion.</p>
+            <p>Entreprise assurée RC Pro + décennale.</p>
+            <p style="margin-top:8px;">SIRET : XXX XXX XXX XXXXX</p>
+        </div>
+        <div>
+            <h4>Services</h4>
+            <a href="#services">Terrassement</a>
+            <a href="#services">VRD & Réseaux</a>
+            <a href="#services">Enrochement</a>
+            <a href="#services">Piscine</a>
+            <a href="#services">Location engins</a>
+        </div>
+        <div>
+            <h4>Contact</h4>
+            <a href="tel:+262692XXXXXX">0692 XX XX XX</a>
+            <a href="mailto:contact@reunion-tp.re">contact@reunion-tp.re</a>
+            <a href="https://wa.me/262692XXXXXX">WhatsApp</a>
+            <p>La Réunion (974)</p>
+        </div>
+        <div>
+            <h4>Infos</h4>
+            <a href="#faq">FAQ</a>
+            <a href="#">Mentions légales</a>
+            <a href="#">Confidentialité</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Réunion Terrassement Pro — Terrassement & VRD à La Réunion (974)</p>
+    </div>
+</footer>
+
+<!-- ===== WHATSAPP FLOAT ===== -->
+<a href="https://wa.me/262692XXXXXX?text=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20des%20travaux%20de%20terrassement%20%C3%A0%20La%20R%C3%A9union." class="whatsapp-float" title="WhatsApp" aria-label="WhatsApp">💬</a>
+<div class="wa-tooltip">Un devis ? Écrivez-nous !</div>
+
+<script>
+function toggleFaq(el) {
+    const answer = el.nextElementSibling;
+    const isOpen = answer.classList.contains('open');
+    document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+    document.querySelectorAll('.faq-question').forEach(q => q.classList.remove('open'));
+    if (!isOpen) { answer.classList.add('open'); el.classList.add('open'); }
+}
+function submitDevis(e) {
+    e.preventDefault();
+    const form = document.querySelector('.devis-form');
+    const inputs = form.querySelectorAll('input[required], select[required]');
+    let valid = true;
+    inputs.forEach(input => {
+        if (!input.value.trim()) { input.style.borderColor = '#c0392b'; valid = false; }
+        else { input.style.borderColor = '#e0e0e0'; }
+    });
+    if (valid) {
+        const btn = form.querySelector('.form-submit');
+        btn.textContent = '✓ Demande envoyée !';
+        btn.style.background = '#27ae60';
+        btn.disabled = true;
+        setTimeout(() => { btn.textContent = 'Envoyer ma demande de devis'; btn.style.background = ''; btn.disabled = false; }, 4000);
+    }
+}
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); document.querySelector('.nav-links').classList.remove('open'); }
+    });
+});
+setTimeout(() => {
+    const t = document.querySelector('.wa-tooltip');
+    if (t) { t.style.transition = 'opacity 0.5s'; t.style.opacity = '0'; setTimeout(() => t.remove(), 500); }
+}, 10000);
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RÃ©union Terrassement Pro â Terrassement & VRD Ã  La RÃ©union (974)</title>
     <meta name="description" content="RÃ©union Terrassement Pro â Expert en terrassement, VRD, enrochement et amÃ©nagement extÃ©rieur Ã  La RÃ©union. Devis gratuit en 2h. Entreprise assurÃ©e et certifiÃ©e.">
     <meta name="keywords" content="terrassement rÃ©union, terrassement 974, VRD rÃ©union, enrochement rÃ©union, mini pelle rÃ©union, terrassement particulier rÃ©union, entreprise terrassement la rÃ©union">
