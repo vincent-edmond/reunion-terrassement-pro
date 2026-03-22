@@ -35,6 +35,80 @@
             background: var(--bg);
         }
 
+        
+        /* Dropdown Services */
+        .nav-dropdown {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+        }
+        .nav-dropdown-trigger {
+            cursor: pointer;
+        }
+        .nav-dropdown-menu {
+            display: none;
+            position: absolute;
+            top: calc(100% + 12px);
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(30,30,30,0.98);
+            backdrop-filter: blur(14px);
+            min-width: 240px;
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.08);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+            padding: 8px 0;
+            z-index: 1001;
+        }
+        .nav-dropdown-menu::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 8px solid transparent;
+            border-bottom-color: rgba(30,30,30,0.98);
+        }
+        .nav-dropdown:hover .nav-dropdown-menu {
+            display: block;
+        }
+        .nav-dropdown-menu a {
+            display: block;
+            padding: 10px 20px;
+            color: rgba(255,255,255,0.75);
+            text-decoration: none;
+            font-size: 0.84rem;
+            font-weight: 500;
+            transition: all 0.15s ease;
+            white-space: nowrap;
+        }
+        .nav-dropdown-menu a:hover {
+            color: #fff;
+            background: rgba(232,102,10,0.15);
+            padding-left: 24px;
+        }
+        @media (max-width: 640px) {
+            .nav-dropdown-menu {
+                position: static;
+                transform: none;
+                background: rgba(20,20,20,0.95);
+                box-shadow: none;
+                border: none;
+                border-radius: 8px;
+                margin: 4px 0;
+                min-width: auto;
+            }
+            .nav-dropdown-menu::before { display: none; }
+            .nav-dropdown-menu a {
+                padding: 8px 16px;
+                font-size: 0.82rem;
+            }
+            .nav-dropdown:hover .nav-dropdown-menu,
+            .nav-dropdown .nav-dropdown-menu {
+                display: block;
+            }
+        }
+
         /* ========== NAV ========== */
         .nav {
             position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
@@ -502,17 +576,27 @@
 
 <!-- ===== NAV ===== -->
 <nav class="nav">
-    <a href="#" class="nav-logo">RÉUNION <span>TP</span></a>
-    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
-    <div class="nav-links">
-        <a href="#services">Services</a>
-        <a href="#pourquoi">Pourquoi nous</a>
-        <a href="simulateur-prix.html">Simulateur</a>
-        <a href="#avis">Avis</a>
-        <a href="blog/prix-terrassement-reunion.html">Blog</a>
-        <a href="devis.html" class="nav-cta">Devis gratuit</a>
-    </div>
-</nav>
+        <a href="index.html" class="nav-logo">RÉUNION <span>TP</span></a>
+        <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+        <div class="nav-links">
+            <div class="nav-dropdown">
+                <a href="#services" class="nav-dropdown-trigger">Services ▾</a>
+                <div class="nav-dropdown-menu">
+                    <a href="terrassement.html">Terrassement</a>
+                    <a href="vrd-viabilisation.html">VRD & Viabilisation</a>
+                    <a href="enrochement-moellonnage.html">Enrochement & Moellonnage</a>
+                    <a href="piscine.html">Terrassement Piscine</a>
+                    <a href="amenagement-exterieur.html">Aménagement Extérieur</a>
+                    <a href="location-engins.html">Location Engins</a>
+                </div>
+            </div>
+            <a href="#pourquoi">Pourquoi nous</a>
+            <a href="simulateur-prix.html">Simulateur</a>
+            <a href="#avis">Avis</a>
+            <a href="blog/prix-terrassement-reunion.html">Blog</a>
+            <a href="devis.html" class="nav-cta">Devis gratuit</a>
+        </div>
+    </nav>
 
 <!-- ===== HERO ===== -->
 <section class="hero">
