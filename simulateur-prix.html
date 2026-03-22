@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulateur Prix Terrassement La Réunion — Estimation Gratuite 974</title>
+  <meta name="description" content="Estimez le prix de votre terrassement à La Réunion. Simulateur gratuit : terrassement, VRD, piscine, enrochement. Résultat instantané + pré-devis personnalisé.">
+  <meta name="keywords" content="prix terrassement réunion, simulateur tarif, estimation terrassement 974, coût VRD">
+  <link rel="canonical" href="https://reunion-terrassement-pro.re/simulateur-prix.html">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">RÉUNION <span>TP</span></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li class="dropdown">
+          <a href="#">Services</a>
+          <div class="dropdown-content">
+            <a href="terrassement.html">Terrassement</a>
+            <a href="vrd-viabilisation.html">VRD & Viabilisation</a>
+            <a href="enrochement-moellonnage.html">Enrochement & Moellonnage</a>
+            <a href="piscine.html">Terrassement Piscine</a>
+            <a href="amenagement-exterieur.html">Aménagement Extérieur</a>
+            <a href="location-engins.html">Location Engins</a>
+          </div>
+        </li>
+        <li><a href="simulateur-prix.html">Simulateur</a></li>
+        <li><a href="blog/prix-terrassement-reunion.html">Blog</a></li>
+        <li><a href="devis.html" class="cta-button">Devis gratuit</a></li>
+      </ul>
+      <div class="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <div class="breadcrumb">
+    <a href="index.html">Accueil</a> > Simulateur de Prix
+  </div>
+
+  <div class="main-container">
+    <div class="section-header">
+      <h1>Simulateur Prix Terrassement La Réunion</h1>
+      <p style="color: var(--text-light); max-width: 600px; margin: 0 auto;">Obtenez une estimation indicative en quelques clics. Pour un chiffrage précis, une visite sur site est indispensable — chaque terrain péi est unique.</p>
+    </div>
+
+    <div class="calculator-container">
+      <div class="calculator-group">
+        <label for="service-type">Type de travaux</label>
+        <select id="service-type">
+          <option value="">— Sélectionnez —</option>
+          <option value="terrassement">Terrassement (décaissement, nivellement)</option>
+          <option value="vrd">VRD & Viabilisation</option>
+          <option value="enrochement">Enrochement / Mur de soutènement</option>
+          <option value="piscine">Terrassement Piscine</option>
+          <option value="amenagement">Aménagement extérieur (accès, plateforme)</option>
+        </select>
+      </div>
+
+      <div class="calculator-group">
+        <label for="surface">Surface ou longueur</label>
+        <input type="number" id="surface" placeholder="Ex: 100 (m² ou ml selon travaux)" min="1">
+      </div>
+
+      <div class="calculator-group">
+        <label for="terrain-type">Nature du terrain</label>
+        <select id="terrain-type">
+          <option value="meuble">Terre meuble (facile)</option>
+          <option value="mixte">Mixte terre/roche</option>
+          <option value="basalte">Basalte (brise-roche nécessaire)</option>
+        </select>
+      </div>
+
+      <div class="calculator-group">
+        <label for="acces">Accessibilité du terrain</label>
+        <select id="acces">
+          <option value="facile">Accès facile (route, plat)</option>
+          <option value="moyen">Accès moyen (chemin, légère pente)</option>
+          <option value="difficile">Accès difficile (Hauts, forte pente, chemin étroit)</option>
+        </select>
+      </div>
+
+      <div class="calculator-group">
+        <label for="commune">Commune</label>
+        <select id="commune">
+          <option value="nord">Nord (Saint-Denis, Sainte-Marie, Sainte-Suzanne)</option>
+          <option value="ouest">Ouest (Saint-Paul, La Possession, Le Port)</option>
+          <option value="sud">Sud (Saint-Pierre, Le Tampon, Saint-Louis)</option>
+          <option value="est">Est (Saint-André, Saint-Benoît, Bras-Panon)</option>
+          <option value="hauts">Les Hauts (Cilaos, Salazie, Plaine des Cafres)</option>
+        </select>
+      </div>
+
+      <button class="submit-btn" onclick="calculerPrix()">Estimer le prix</button>
+
+      <div class="calculator-result" id="result" style="display: none;">
+        <h3>Estimation indicative</h3>
+        <div class="price" id="price-range"></div>
+        <p id="price-details"></p>
+        <p style="color: var(--text-light); font-size: 0.85rem; margin-top: 1rem; border-top: 1px solid var(--border-light); padding-top: 1rem;">
+          <strong>Attention :</strong> Cette estimation est purement indicative. À La Réunion, chaque terrain a ses particularités (basalte, pente, ravine, PPR). Seule une visite sur site permet un chiffrage définitif.
+        </p>
+        <a href="devis.html" class="hero-cta" style="margin-top: 1rem;">Demander un pré-devis personnalisé</a>
+      </div>
+    </div>
+
+    <section style="margin: 3rem 0;">
+      <h2 style="margin-bottom: 1.5rem;">Comment fonctionne notre simulateur ?</h2>
+      <div style="background: var(--light-bg); padding: 2rem; border-radius: 12px; margin-bottom: 2rem;">
+        <p>Notre simulateur calcule une fourchette de prix basée sur les tarifs moyens constatés à La Réunion en 2026. Il prend en compte le type de travaux, la surface, la nature du sol, l'accessibilité et la localisation.</p>
+        <p>Cependant, le prix réel dépend de nombreux facteurs qu'on ne peut évaluer qu'en se déplaçant : épaisseur de la couche basaltique, présence de ravines, contraintes PPR, distance au dépôt de déblais, etc.</p>
+        <p><strong>C'est pourquoi nous proposons systématiquement une visite sur site gratuite</strong> pour établir un chiffrage précis et adapté à votre terrain.</p>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <h2>Vous voulez un vrai chiffrage ?</h2>
+      <p>Pré-devis gratuit en 2h par WhatsApp. Visite terrain offerte pour prix définitif.</p>
+      <a href="devis.html" class="hero-cta">Demander un pré-devis gratuit</a>
+    </section>
+  </div>
+
+  <a href="https://wa.me/269200000000?text=Bonjour%20RTP,%20j'ai%20utilisé%20le%20simulateur%20et%20je%20souhaite%20un%20pré-devis..." class="whatsapp-btn">💬</a>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>À propos</h4>
+        <p>Réunion Terrassement Pro — expertise locale, assurance décennale, respect des normes PPR. Des Hauts aux Bas depuis 2014.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="terrassement.html">Terrassement</a></li>
+          <li><a href="vrd-viabilisation.html">VRD & Viabilisation</a></li>
+          <li><a href="enrochement-moellonnage.html">Enrochement</a></li>
+          <li><a href="piscine.html">Terrassement Piscine</a></li>
+          <li><a href="amenagement-exterieur.html">Aménagement</a></li>
+          <li><a href="location-engins.html">Location Engins</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Blog</h4>
+        <ul>
+          <li><a href="blog/prix-terrassement-reunion.html">Prix 2026</a></li>
+          <li><a href="blog/etapes-terrassement-reunion.html">8 Étapes</a></li>
+          <li><a href="blog/permis-terrassement-reunion.html">Permis</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>Téléphone: <strong>0692 XX XX XX</strong></p>
+        <p>WhatsApp: <strong>0692 XX XX XX</strong></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Réunion Terrassement Pro. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+
+    function calculerPrix() {
+      var service = document.getElementById('service-type').value;
+      var surface = parseFloat(document.getElementById('surface').value);
+      var terrain = document.getElementById('terrain-type').value;
+      var acces = document.getElementById('acces').value;
+      var commune = document.getElementById('commune').value;
+
+      if (!service || !surface || surface <= 0) {
+        alert('Merci de remplir tous les champs.');
+        return;
+      }
+
+      // Base prices per m² or ml
+      var bases = {
+        terrassement: { min: 8, max: 25 },
+        vrd: { min: 40, max: 100 },
+        enrochement: { min: 150, max: 400 },
+        piscine: { min: 50, max: 120 },
+        amenagement: { min: 15, max: 45 }
+      };
+
+      var base = bases[service];
+      var minPrice = base.min * surface;
+      var maxPrice = base.max * surface;
+
+      // Terrain multiplier
+      var terrainMult = { meuble: 1, mixte: 1.3, basalte: 1.8 };
+      minPrice *= terrainMult[terrain];
+      maxPrice *= terrainMult[terrain];
+
+      // Access multiplier
+      var accesMult = { facile: 1, moyen: 1.15, difficile: 1.35 };
+      minPrice *= accesMult[acces];
+      maxPrice *= accesMult[acces];
+
+      // Commune multiplier (Hauts more expensive)
+      var communeMult = { nord: 1, ouest: 1, sud: 1.05, est: 1.05, hauts: 1.2 };
+      minPrice *= communeMult[commune];
+      maxPrice *= communeMult[commune];
+
+      // Round to nearest 100
+      minPrice = Math.round(minPrice / 100) * 100;
+      maxPrice = Math.round(maxPrice / 100) * 100;
+
+      // Ensure minimum
+      if (minPrice < 500) minPrice = 500;
+      if (maxPrice < minPrice + 500) maxPrice = minPrice + 500;
+
+      var serviceNames = {
+        terrassement: 'Terrassement',
+        vrd: 'VRD & Viabilisation',
+        enrochement: 'Enrochement / Soutènement',
+        piscine: 'Terrassement Piscine',
+        amenagement: 'Aménagement Extérieur'
+      };
+
+      var terrainNames = { meuble: 'terre meuble', mixte: 'mixte terre/roche', basalte: 'basalte (brise-roche)' };
+
+      document.getElementById('price-range').textContent = minPrice.toLocaleString('fr-FR') + ' € — ' + maxPrice.toLocaleString('fr-FR') + ' €';
+      document.getElementById('price-details').textContent = serviceNames[service] + ' · ' + surface + ' m² · ' + terrainNames[terrain];
+      document.getElementById('result').style.display = 'block';
+      document.getElementById('result').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  </script>
+</body>
+</html>
