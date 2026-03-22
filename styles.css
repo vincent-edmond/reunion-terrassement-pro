@@ -725,7 +725,15 @@ footer {
 }
 
 .footer-section p {
-  color: rgba(255,255,255,0.8);
+  color: rgba(255,255,255,0.8) !important;
+}
+
+footer p {
+  color: rgba(255,255,255,0.8) !important;
+}
+
+footer strong {
+  color: #FFFFFF;
 }
 
 .footer-section ul {
@@ -750,6 +758,10 @@ footer {
   padding-top: 2rem;
   text-align: center;
   color: rgba(255,255,255,0.7);
+}
+
+.footer-bottom p {
+  color: rgba(255,255,255,0.7) !important;
 }
 
 /* Forms */
