@@ -98,6 +98,11 @@ nav {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--dark-black);
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: var(--dark-black);
 }
 
 .logo span {
