@@ -363,7 +363,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1.25rem;
 }
 
 .hero-cta {
@@ -384,22 +384,33 @@ nav {
   transform: translateY(-2px);
 }
 
-.hero-whatsapp {
-  background: #25D366;
+/* Secondary contact links */
+.hero-secondary {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
 }
 
-.hero-whatsapp:hover {
-  background: #1da851;
+.hero-link {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  text-decoration: none;
 }
 
-.hero-phone {
-  background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.6);
+.hero-link:hover {
+  color: #FFFFFF;
 }
 
-.hero-phone:hover {
-  background: rgba(255, 255, 255, 0.15);
-  border-color: #FFFFFF;
+.hero-link-whatsapp:hover {
+  color: #25D366;
+}
+
+.hero-link-sep {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.9rem;
 }
 
 /* Hero Stats */
@@ -439,12 +450,22 @@ nav {
   }
 
   .hero-buttons {
-    flex-direction: column;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .hero-cta {
     text-align: center;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .hero-secondary {
+    margin-bottom: 2rem;
+    gap: 0.75rem;
+  }
+
+  .hero-link {
+    font-size: 0.9rem;
   }
 
   .hero-stats {
